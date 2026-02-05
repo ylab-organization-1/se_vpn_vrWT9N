@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style>
+    img {
+      width: 100%;
+      max-width: 540px;
+      /* ←PCでの上限 */
+      height: auto;
+      display: block;
+    }
+
+    h3,
+    li::marker {
+      font-size: large;
+      font-weight: 700;
+      font-family: inherit;
+    }
+
+    p {
+      font-size: medium;
+      margin-left: 0;
+    }
+
+    ol {
+      padding-left: 1.2em
+    }
+
+    html {
+      font-family: "Lato", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+    }
+
+    button {
+      font-size: clamp(21px, 1.8vw, 30px);
+      padding: clamp(0.3rem, 1vw, 0.6rem) clamp(0.6rem, 2vw, 0.8rem);
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 0.375rem;
+      cursor: pointer;
+    }
+  </style>
+  <title>実験の説明</title>
+</head>
+
+<body>
+  <p>本実験は、ルーターの設定画面、説明書を実際に画面を操作してもらうことにより評価する実験です。</p>
+  <p>最後まで読んでから操作を開始してください。</p>
+  <p>実際にあなたの所有するルータの代わりに、こちらで用意した設定画面を操作していただきます。</p>
+  <p>なお、この設定画面での入力内容は取得いたしません。</p>
+
+  <p>操作内容と、操作の背景を以下に説明します。</p>
+  <ol>
+    <li>
+      <h3>
+        あなたの家には、防犯カメラがいくつかあり、家の中からカメラの映像を確認できます。
+      </h3>
+    </li>
+    <img src="./explain_vpn/1.png">
+    <li>
+      <h3>
+        しかし、家の外からは見られないので調べてみたところ、VPNというものをルーターとスマホで設定すればいいということが分かりました。
+      </h3>
+      <img src="./explain_vpn/2.png">
+    </li>
+    <li>
+      <h3>VPNを使用するには、事前共有キーと、アカウント名、パスワードの設定が必要とのことです。このうち、ルーター側の設定を行ってください。
+      </h3>
+      <img src="./explain_vpn/3.png">
+    </li>
+  </ol>
+  <p>今回操作していただく設定画面はブラウザで操作するものです。「設定画面」のボタンを押すと、VPNに関する設定画面が新しいタブで開きます。</p>
+  <p>操作が完了しましたら、ポップアップが表示されますので、ご確認の上、事後アンケートに回答してください。</p>
+  <p>また、「説明書」のボタンを押すと、この操作画面の説明書が新しいタブで開きます。本画面と説明書は必要に応じて参照してください。</p>
+  <p>ここまで読み終わりましたら、以下の「設定画面」より、操作を開始してください。</p>
+  <button onclick="window.open('./WebUI/UI.html')">設定画面</button>
+  <button onclick="window.open('./Manual/manual.html')">説明書</button>
+</body>
+
+
+</html>
